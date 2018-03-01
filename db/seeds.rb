@@ -7,30 +7,30 @@ Appearance.delete_all
 u1 = User.create(
   provider: "github",
   uid: "1",
-  username: "jarlax1",
-  email: "jarlax1@launchacademy.com",
-  avatar_url: "https://avatars2.githubusercontent.com/u/174825?v=3&s=400"
+  username: "#{Faker::Simpsons.character}",
+  email: "#{Faker::Internet.email}",
+  avatar_url: "#{Faker::Avatar.image}"
 )
 u2 = User.create(
   provider: "github",
   uid: "2",
-  username: "#{Faker::Internet.user_name}",
+  username: "#{Faker::Simpsons.character}",
   email: "#{Faker::Internet.email}",
-  avatar_url: "https://avatars2.githubusercontent.com/u/174825?v=3&s=400"
+  avatar_url: "#{Faker::Avatar.image}"
 )
 u3 = User.create(
   provider: "github",
   uid: "3",
-  username: "#{Faker::Internet.user_name}",
+  username: "#{Faker::Simpsons.character}",
   email: "#{Faker::Internet.email}",
-  avatar_url: "https://avatars2.githubusercontent.com/u/174825?v=3&s=400"
+  avatar_url: "#{Faker::Avatar.image}"
 )
 u4 = User.create(
   provider: "github",
   uid: "4",
-  username: "#{Faker::Internet.user_name}",
+  username: "#{Faker::Simpsons.character}",
   email: "#{Faker::Internet.email}",
-  avatar_url: "https://avatars2.githubusercontent.com/u/174825?v=3&s=400"
+  avatar_url: "#{Faker::Avatar.image}"
 )
 
 m1 = Meetup.create(
