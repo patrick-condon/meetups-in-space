@@ -1,0 +1,23 @@
+<!-- Put your News Aggregator new.erb code here -->
+<h1>New Meetup</h1>
+
+ <% if @errors != [] %>
+   <ul class="error">
+     <% @errors.each do |error| %>
+      <h3><%= error %></h3>
+      <% end %>
+   </ul>
+ <% end %>
+
+<form action="/meetups/new" method="post">
+  <label for="name">Name:</label><br />
+  <input type="text" size ="75" id="name" name="name" value="<%= @name %>"/>
+  <br />
+  <label for="location">Location:</label><br />
+  <input type="text" size="75" id="location" name="location" value="<%= @location %>"/>
+  <br />
+  <label for="description">Description:</label><br />
+  <input type="text" size="75" id="description" name="description" value="<%= @description %>"/>
+  <br />
+  <input type="submit" value='Submit'/>
+</form>
